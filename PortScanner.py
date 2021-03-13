@@ -1,15 +1,18 @@
 import socket
 from IPy import IP
 
-start = int(input("Enter the port you want your scan to start with: "))
-end = int(input("Enter the port you want your scan to end with: "))
+starting_port = int(input("Enter the port you want your scan to start with: "))
+ending_port = int(input("Enter the port you want your scan to end with: "))
 
-def multiple_scan(ipaddress):
-    convertedIP = check_ip(ipaddress)
-    print("\n" + "Scanning Target: " + str(ipaddress))
+
+# Make able multiple scans to be done
+def multiple_scan(ip_address):
+    convertedIP = check_ip(ip_address)
+    print("\n" + "Scanning Target: " + str(ip_address))
     # Specifying a range of ports to scan
-    for port in range(start, end + 1):
+    for port in range(starting_port, ending_port + 1):
         port_scan(convertedIP, port)
+
 
 # Make the domain name of a web page to be accepted
 def check_ip(ip):
@@ -19,26 +22,30 @@ def check_ip(ip):
     except ValueError:
         return socket.gethostbyname(ip)
 
-timer = float(input("Enter the timer you want your scan to take for each port in seconds (the bigger the better resutls): "))
 
-# Scanning ONE port based on an IP address
-def port_scan(ipaddress, port):
+# Get the time for each scan
+timer = float(
+    input("Enter the timer you want your scan to take for each port in seconds (the bigger the better results): "))
+
+
+# Scanning one port based on an IP address
+def port_scan(ip_address, port):
     try:
         socketObject = socket.socket()
         # Set the time for each port to be scanned
         socketObject.settimeout(timer)
         # Connect to the port
-        socketObject.connect((ipaddress, port))
+        socketObject.connect((ip_address, port))
         print("The port " + str(port) + " is open!")
     except:
         pass
 
 
+ip_address = input("Enter the IP you want to scan, to scan more than one target split them with the '+' symbol: ")
 
-ipaddress = input("Enter the IP you want to scan, to scan more than one target split them with the '+' symbol: ")
-
-if '+' in ipaddress:
-    for ip in ipaddress.split('+'):
+# Separate each ip address or domain name with the + symbol
+if '+' in ip_address:
+    for ip in ip_address.split('+'):
         multiple_scan(ip.strip(' '))
 else:
-    multiple_scan(ipaddress)
+    multiple_scan(ip_address)
