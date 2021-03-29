@@ -8,3 +8,4 @@ Feature List:
 - Word List Generator
 - Keylogger
 - Brute Force Attack
+- Hash Cracker
