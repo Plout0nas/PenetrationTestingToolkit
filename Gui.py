@@ -8,7 +8,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        uic.loadUi("mainwindow.ui", self)
+        uic.loadUi("Gui.ui", self)
 
     #def port_scanner(self):
 
