@@ -20,6 +20,7 @@
       <property name="font">
        <font>
         <family>Copperplate Gothic Light</family>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="currentIndex">
@@ -47,6 +48,7 @@
           <property name="font">
            <font>
             <family>Copperplate Gothic Light</family>
+            <pointsize>10</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -60,7 +62,7 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_8">
            <item row="0" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0">
+            <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0,0">
              <property name="spacing">
               <number>0</number>
              </property>
@@ -133,27 +135,42 @@ color:rgb(10, 255, 30);</string>
                </item>
                <item>
                 <property name="text">
-                 <string>3</string>
+                 <string>DDoS</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>4</string>
+                 <string>Hash Cracker</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>5</string>
+                 <string>Word List Generator</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>6</string>
+                 <string>SSH Bruteforce</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>7</string>
+                 <string>Backdoor</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Ransomware</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>OS Detection</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>SQL Injection</string>
                 </property>
                </item>
               </widget>
@@ -163,6 +180,7 @@ color:rgb(10, 255, 30);</string>
                <property name="font">
                 <font>
                  <family>Copperplate Gothic Light</family>
+                 <pointsize>10</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -176,6 +194,57 @@ color:rgb(10, 255, 30);</string>
                </property>
               </spacer>
              </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="font">
+                <font>
+                 <family>Copperplate Gothic Light</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(220, 220, 220);</string>
+               </property>
+               <property name="text">
+                <string>Keylogger</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="font">
+                <font>
+                 <family>Copperplate Gothic Light</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="font">
+                <font>
+                 <family>Copperplate Gothic Light</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(220, 220, 220);</string>
+               </property>
+               <property name="text">
+                <string>Stop</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </item>
           </layout>
@@ -188,6 +257,12 @@ color:rgb(10, 255, 30);</string>
             <horstretch>1</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>10</pointsize>
+           </font>
           </property>
           <property name="currentIndex">
            <number>0</number>
@@ -208,6 +283,7 @@ color:rgb(10, 255, 30);</string>
               <property name="font">
                <font>
                 <family>Copperplate Gothic Light</family>
+                <pointsize>10</pointsize>
                </font>
               </property>
               <property name="layoutDirection">
@@ -223,7 +299,7 @@ color:rgb(10, 255, 30);</string>
                <enum>QFrame::Sunken</enum>
               </property>
               <layout class="QGridLayout" name="gridLayout_9">
-               <item row="1" column="0">
+               <item row="0" column="0">
                 <layout class="QGridLayout" name="gridLayout_10" rowstretch="20,0" columnstretch="0,0,0,0">
                  <property name="sizeConstraint">
                   <enum>QLayout::SetDefaultConstraint</enum>
@@ -246,25 +322,6 @@ color:rgb(10, 255, 30);</string>
                  <property name="verticalSpacing">
                   <number>150</number>
                  </property>
-                 <item row="0" column="0">
-                  <widget class="QLabel" name="label_6">
-                   <property name="enabled">
-                    <bool>true</bool>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>Copperplate Gothic Light</family>
-                     <pointsize>10</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color:rgb(10, 255, 30);</string>
-                   </property>
-                   <property name="text">
-                    <string>Domain:</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="0" column="1">
                   <widget class="QLineEdit" name="lineEdit_5">
                    <property name="enabled">
@@ -279,34 +336,11 @@ color:rgb(10, 255, 30);</string>
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">background-color: rgb(255, 255, 255);</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="3">
-                  <widget class="QPushButton" name="pushButton_8">
-                   <property name="enabled">
-                    <bool>true</bool>
-                   </property>
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>Copperplate Gothic Light</family>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: rgb(220, 220, 220);</string>
-                   </property>
-                   <property name="text">
-                    <string>Scan</string>
                    </property>
                   </widget>
                  </item>
@@ -324,6 +358,7 @@ color:rgb(10, 255, 30);</string>
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -343,27 +378,22 @@ color:rgb(10, 255, 30);</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="3">
-                  <widget class="QPushButton" name="pushButton_7">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_6">
                    <property name="enabled">
                     <bool>true</bool>
-                   </property>
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
                    </property>
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background-color: rgb(220, 220, 220);</string>
+                    <string notr="true">color:rgb(10, 255, 30);</string>
                    </property>
                    <property name="text">
-                    <string>Save</string>
+                    <string>Domain:</string>
                    </property>
                   </widget>
                  </item>
@@ -399,6 +429,7 @@ color:rgb(10, 255, 30);</string>
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -406,6 +437,56 @@ color:rgb(10, 255, 30);</string>
                    </property>
                    <property name="text">
                     <string>+</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QPushButton" name="pushButton_8">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(220, 220, 220);</string>
+                   </property>
+                   <property name="text">
+                    <string>Scan</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Copperplate Gothic Light</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(220, 220, 220);</string>
+                   </property>
+                   <property name="text">
+                    <string>Save</string>
                    </property>
                   </widget>
                  </item>
@@ -563,6 +644,7 @@ color:rgb(10, 255, 30);</string>
           <property name="font">
            <font>
             <family>Copperplate Gothic Light</family>
+            <pointsize>10</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -602,7 +684,7 @@ color:rgb(10, 255, 30);</string>
      <x>0</x>
      <y>0</y>
      <width>1076</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
