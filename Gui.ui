@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1338</width>
+    <width>1206</width>
     <height>990</height>
    </rect>
   </property>
@@ -598,6 +598,12 @@ selection-background-color: rgb(0, 0, 0);</string>
                    <height>0</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Copperplate Gothic Light</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
@@ -635,6 +641,12 @@ selection-background-color: rgb(0, 0, 0);</string>
                    <width>50</width>
                    <height>0</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Copperplate Gothic Light</family>
+                   <pointsize>10</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">color:rgb(10, 255, 30);</string>
@@ -1552,7 +1564,7 @@ selection-background-color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1338</width>
+     <width>1206</width>
      <height>26</height>
     </rect>
    </property>
