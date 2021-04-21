@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1071</width>
+    <width>1338</width>
     <height>990</height>
    </rect>
   </property>
@@ -290,7 +290,7 @@ selection-background-color: rgb(0, 0, 0);</string>
            </font>
           </property>
           <property name="currentIndex">
-           <number>4</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page">
            <layout class="QGridLayout" name="gridLayout_3">
@@ -928,7 +928,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Text file</string>
+                  <string>Text file:</string>
                  </property>
                 </widget>
                </item>
@@ -1039,7 +1039,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Password</string>
+                  <string>Password:</string>
                  </property>
                 </widget>
                </item>
@@ -1055,7 +1055,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Hashed password</string>
+                  <string>Hashed password:</string>
                  </property>
                 </widget>
                </item>
@@ -1219,7 +1219,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Max</string>
+                  <string>Max:</string>
                  </property>
                 </widget>
                </item>
@@ -1356,7 +1356,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Min</string>
+                  <string>Min:</string>
                  </property>
                 </widget>
                </item>
@@ -1400,7 +1400,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Path</string>
+                  <string>Path:</string>
                  </property>
                 </widget>
                </item>
@@ -1552,8 +1552,8 @@ selection-background-color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1071</width>
-     <height>21</height>
+     <width>1338</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
