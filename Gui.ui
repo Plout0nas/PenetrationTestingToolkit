@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1106</width>
-    <height>790</height>
+    <width>1061</width>
+    <height>937</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -204,7 +204,7 @@ selection-background-color: rgb(0, 0, 0);</string>
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_24">
+              <widget class="QPushButton" name="backdoor_btn">
                <property name="font">
                 <font>
                  <family>Copperplate Gothic Light</family>
@@ -239,7 +239,7 @@ selection-background-color: rgb(0, 0, 0);</string>
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="keylogge_btn">
                <property name="font">
                 <font>
                  <family>Copperplate Gothic Light</family>
@@ -274,7 +274,7 @@ selection-background-color: rgb(0, 0, 0);</string>
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="keylogger_stop_btn">
                <property name="font">
                 <font>
                  <family>Copperplate Gothic Light</family>
@@ -315,9 +315,9 @@ selection-background-color: rgb(0, 0, 0);</string>
            </font>
           </property>
           <property name="currentIndex">
-           <number>7</number>
+           <number>0</number>
           </property>
-          <widget class="QWidget" name="page">
+          <widget class="QWidget" name="ipf_page">
            <layout class="QGridLayout" name="gridLayout_3">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_2">
@@ -373,7 +373,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <number>150</number>
                  </property>
                  <item row="0" column="1">
-                  <widget class="QLineEdit" name="lineEdit_5">
+                  <widget class="QLineEdit" name="ipf_domain_lineEdit">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -395,7 +395,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QLabel" name="label_7">
+                  <widget class="QLabel" name="ipf_ip_label">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -448,7 +448,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item row="0" column="2">
-                  <widget class="QPushButton" name="pushButton_9">
+                  <widget class="QPushButton" name="ipf_plus_btn">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -491,7 +491,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QPushButton" name="pushButton_8">
+                  <widget class="QPushButton" name="ipf_scan_btn">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -516,7 +516,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item row="1" column="3">
-                  <widget class="QPushButton" name="pushButton_7">
+                  <widget class="QPushButton" name="ipf">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -567,7 +567,7 @@ selection-background-color: rgb(0, 0, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_2">
+          <widget class="QWidget" name="port_page">
            <layout class="QGridLayout" name="gridLayout_12">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_3">
@@ -610,7 +610,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="0" column="1">
-                <widget class="QSpinBox" name="spinBox">
+                <widget class="QSpinBox" name="port_starting_spinBox">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -648,7 +648,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="2" column="1">
-                <widget class="QSpinBox" name="spinBox_2">
+                <widget class="QSpinBox" name="port_ending_spinBox">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -686,7 +686,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="4" column="1">
-                <widget class="QLineEdit" name="lineEdit">
+                <widget class="QLineEdit" name="port_domain_lineEdit">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -723,7 +723,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                <item row="8" column="1">
                 <layout class="QHBoxLayout" name="horizontalLayout">
                  <item>
-                  <widget class="QPushButton" name="pushButton_4">
+                  <widget class="QPushButton" name="port_fast_btn">
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
@@ -739,7 +739,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_6">
+                  <widget class="QPushButton" name="port_advanced_btn">
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
@@ -755,7 +755,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_5">
+                  <widget class="QPushButton" name="port_normal_btn">
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
@@ -771,7 +771,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_3">
+                  <widget class="QPushButton" name="port_veryFast_btn">
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
@@ -789,7 +789,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </layout>
                </item>
                <item row="9" column="1">
-                <widget class="QPushButton" name="pushButton_10">
+                <widget class="QPushButton" name="port_scan_btn">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -833,7 +833,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="12" column="1">
-                <widget class="QLabel" name="label_10">
+                <widget class="QLabel" name="port_openPorts_label">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -870,7 +870,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="13" column="1">
-                <widget class="QPushButton" name="pushButton_11">
+                <widget class="QPushButton" name="port_save_btn">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -901,7 +901,7 @@ selection-background-color: rgb(0, 0, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_3">
+          <widget class="QWidget" name="ddos_page">
            <layout class="QGridLayout" name="gridLayout_14">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_5">
@@ -952,7 +952,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="2" column="2">
-                <widget class="QLineEdit" name="lineEdit_7">
+                <widget class="QLineEdit" name="ddos_port_lineEdit">
                  <property name="font">
                   <font>
                    <pointsize>10</pointsize>
@@ -964,7 +964,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="0" column="2">
-                <widget class="QLineEdit" name="lineEdit_6">
+                <widget class="QLineEdit" name="ddos_ip_lineEdit">
                  <property name="font">
                   <font>
                    <pointsize>10</pointsize>
@@ -991,7 +991,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="4" column="2">
-                <widget class="QLabel" name="label_21">
+                <widget class="QLabel" name="ddos_output_label">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1021,7 +1021,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="3" column="2">
-                <widget class="QPushButton" name="pushButton_20">
+                <widget class="QPushButton" name="ddos_start_btn">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1046,7 +1046,7 @@ selection-background-color: rgb(0, 0, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_4">
+          <widget class="QWidget" name="hash_page">
            <layout class="QGridLayout" name="gridLayout_15">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_6">
@@ -1081,14 +1081,14 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Text file</string>
+                  <string>Text file:</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="3">
                 <layout class="QHBoxLayout" name="horizontalLayout_2">
                  <item>
-                  <widget class="QPushButton" name="pushButton_16">
+                  <widget class="QPushButton" name="hash_sha1_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1110,7 +1110,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_15">
+                  <widget class="QPushButton" name="hash_md5_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1141,7 +1141,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_14">
+                  <widget class="QPushButton" name="hash_sha256_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1165,7 +1165,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </layout>
                </item>
                <item row="6" column="4">
-                <widget class="QPushButton" name="pushButton_12">
+                <widget class="QPushButton" name="hash_save_btn">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -1192,7 +1192,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Password</string>
+                  <string>Password:</string>
                  </property>
                 </widget>
                </item>
@@ -1208,12 +1208,12 @@ selection-background-color: rgb(0, 0, 0);</string>
                   <string notr="true">color:rgb(10, 255, 30);</string>
                  </property>
                  <property name="text">
-                  <string>Hashed password</string>
+                  <string>Hashed password:</string>
                  </property>
                 </widget>
                </item>
                <item row="6" column="3">
-                <widget class="QLabel" name="label_11">
+                <widget class="QLabel" name="hash_pwd_label">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1244,7 +1244,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="1" column="4">
-                <widget class="QToolButton" name="toolButton">
+                <widget class="QToolButton" name="hash_toolButton">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -1260,7 +1260,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="1" column="3">
-                <widget class="QLineEdit" name="lineEdit_3">
+                <widget class="QLineEdit" name="hash_textFile_LineEdit">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -1273,7 +1273,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="0" column="3">
-                <widget class="QLineEdit" name="lineEdit_2">
+                <widget class="QLineEdit" name="hash_hashedPwd_lineEdit">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -1290,7 +1290,7 @@ selection-background-color: rgb(0, 0, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_5">
+          <widget class="QWidget" name="wordList_page">
            <layout class="QGridLayout" name="gridLayout_16">
             <item row="0" column="1">
              <widget class="QFrame" name="frame_7">
@@ -1311,7 +1311,7 @@ selection-background-color: rgb(0, 0, 0);</string>
               </property>
               <layout class="QGridLayout" name="gridLayout_18">
                <item row="0" column="1">
-                <widget class="QSpinBox" name="spinBox_4">
+                <widget class="QSpinBox" name="wordList_min_spinBox">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -1330,7 +1330,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QSpinBox" name="spinBox_3">
+                <widget class="QSpinBox" name="wordList_max_spinBox">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1379,7 +1379,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                <item row="2" column="2" colspan="2">
                 <layout class="QHBoxLayout" name="horizontalLayout_4">
                  <item>
-                  <widget class="QPushButton" name="pushButton_13">
+                  <widget class="QPushButton" name="wordList_num_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1401,7 +1401,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_18">
+                  <widget class="QPushButton" name="wordList_alpha_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1423,7 +1423,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_17">
+                  <widget class="QPushButton" name="wordList_alphanum_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1449,7 +1449,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                <item row="4" column="2">
                 <layout class="QFormLayout" name="formLayout_3">
                  <item row="0" column="0">
-                  <widget class="QLineEdit" name="lineEdit_4">
+                  <widget class="QLineEdit" name="wordList_path_lineEdit">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1474,7 +1474,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QToolButton" name="toolButton_2">
+                  <widget class="QToolButton" name="wordList_toolButton">
                    <property name="font">
                     <font>
                      <family>Copperplate Gothic Light</family>
@@ -1514,7 +1514,7 @@ selection-background-color: rgb(0, 0, 0);</string>
                 </widget>
                </item>
                <item row="5" column="2" colspan="4">
-                <widget class="QPushButton" name="pushButton_19">
+                <widget class="QPushButton" name="wordList_create_btn">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1562,7 +1562,7 @@ selection-background-color: rgb(0, 0, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_6">
+          <widget class="QWidget" name="ssh_page">
            <layout class="QGridLayout" name="gridLayout_17">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_8">
@@ -1584,6 +1584,12 @@ selection-background-color: rgb(0, 0, 0);</string>
               <layout class="QGridLayout" name="gridLayout_22">
                <item row="3" column="5">
                 <spacer name="horizontalSpacer_4">
+                 <property name="font">
+                  <font>
+                   <family>Copperplate Gothic Light</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
                  </property>
@@ -1653,19 +1659,7 @@ color:rgb(10, 255, 30);</string>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_4">
                    <item>
-                    <widget class="QLabel" name="label_31">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>250</width>
-                       <height>23</height>
-                      </size>
-                     </property>
+                    <widget class="QLineEdit" name="ssh_username_lineEdite">
                      <property name="font">
                       <font>
                        <family>Copperplate Gothic Light</family>
@@ -1674,26 +1668,11 @@ color:rgb(10, 255, 30);</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">background-color: rgb(255, 255, 255);</string>
-                     </property>
-                     <property name="text">
-                      <string/>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLabel" name="label_33">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>250</width>
-                       <height>23</height>
-                      </size>
-                     </property>
+                    <widget class="QLineEdit" name="ssh_pwd_lineEdit">
                      <property name="font">
                       <font>
                        <family>Copperplate Gothic Light</family>
@@ -1702,9 +1681,6 @@ color:rgb(10, 255, 30);</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">background-color: rgb(255, 255, 255);</string>
-                     </property>
-                     <property name="text">
-                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -1713,7 +1689,7 @@ color:rgb(10, 255, 30);</string>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_2">
                    <item>
-                    <widget class="QToolButton" name="toolButton_3">
+                    <widget class="QToolButton" name="ssh_username_toolButton">
                      <property name="font">
                       <font>
                        <family>Copperplate Gothic Light</family>
@@ -1729,7 +1705,7 @@ color:rgb(10, 255, 30);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QToolButton" name="toolButton_4">
+                    <widget class="QToolButton" name="ssh_pwd_toolButton">
                      <property name="font">
                       <font>
                        <family>Copperplate Gothic Light</family>
@@ -1751,7 +1727,7 @@ color:rgb(10, 255, 30);</string>
                <item row="3" column="4" rowspan="2">
                 <layout class="QVBoxLayout" name="verticalLayout_7">
                  <item>
-                  <widget class="QPushButton" name="pushButton_23">
+                  <widget class="QPushButton" name="ssh_start_btn">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1776,6 +1752,12 @@ color:rgb(10, 255, 30);</string>
                </item>
                <item row="0" column="0">
                 <spacer name="verticalSpacer_3">
+                 <property name="font">
+                  <font>
+                   <family>Copperplate Gothic Light</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1823,7 +1805,7 @@ color:rgb(10, 255, 30);</string>
                <item row="3" column="1" rowspan="2" colspan="2">
                 <layout class="QVBoxLayout" name="verticalLayout_6">
                  <item>
-                  <widget class="QLabel" name="label_36">
+                  <widget class="QLabel" name="ssh_output_label">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1857,7 +1839,7 @@ color:rgb(10, 255, 30);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="page_9">
+          <widget class="QWidget" name="os_page">
            <layout class="QGridLayout" name="gridLayout_6">
             <item row="0" column="0">
              <widget class="QFrame" name="frame_10">
@@ -1878,7 +1860,7 @@ color:rgb(10, 255, 30);</string>
               </property>
               <layout class="QGridLayout" name="gridLayout_20">
                <item row="2" column="1">
-                <widget class="QLabel" name="label_22">
+                <widget class="QLabel" name="os_output_label">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1911,7 +1893,7 @@ color:rgb(10, 255, 30);</string>
                <item row="0" column="1">
                 <layout class="QFormLayout" name="formLayout_2">
                  <item row="0" column="0">
-                  <widget class="QLineEdit" name="lineEdit_8">
+                  <widget class="QLineEdit" name="os_ip_lineEdite">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                      <horstretch>0</horstretch>
@@ -1979,7 +1961,7 @@ color:rgb(10, 255, 30);</string>
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QPushButton" name="pushButton_21">
+                <widget class="QPushButton" name="os_start_btn">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2042,7 +2024,7 @@ color:rgb(10, 255, 30);</string>
               </property>
               <layout class="QGridLayout" name="gridLayout_21">
                <item row="1" column="2">
-                <widget class="QLineEdit" name="lineEdit_9">
+                <widget class="QLineEdit" name="sqli_host_lineEdite">
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -2071,7 +2053,7 @@ color:rgb(10, 255, 30);</string>
                 </widget>
                </item>
                <item row="2" column="2">
-                <widget class="QLineEdit" name="lineEdit_10">
+                <widget class="QLineEdit" name="sqli_route_lineEdit">
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -2126,7 +2108,7 @@ color:rgb(10, 255, 30);</string>
                 </spacer>
                </item>
                <item row="5" column="2">
-                <widget class="QLabel" name="label_25">
+                <widget class="QLabel" name="sqli_output_label">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2148,7 +2130,7 @@ color:rgb(10, 255, 30);</string>
                 </widget>
                </item>
                <item row="5" column="3">
-                <widget class="QPushButton" name="pushButton_22">
+                <widget class="QPushButton" name="sqli_start_btn">
                  <property name="font">
                   <font>
                    <family>Copperplate Gothic Light</family>
@@ -2226,8 +2208,8 @@ color:rgb(10, 255, 30);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1106</width>
-     <height>21</height>
+     <width>1061</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
