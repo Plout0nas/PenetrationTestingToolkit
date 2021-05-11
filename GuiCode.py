@@ -1155,16 +1155,64 @@ class Ui_MainWindow(object):
         self.ipf_scan_btn.clicked.connect(self.ipfunc)
         # Port Scanner button functionality
         self.port_scan_btn.clicked.connect(self.portscanfunc)
+        #
 
-    def portscanfunc(self,MainWindow):
-            starting_port = self.port_starting_spinBox.Text()
-            ending_port = self.port_ending_spinBox.Text()
+        import HashCracker
+        self.hash_md5_btn.clicked.connect(
+                lambda: HashCracker.hashcracker(self.hash_textFile_LineEdit.text(),
+                                                'md5',
+                                                self.hash_hashedPwd_lineEdit.text(),
+                                                self.hash_pwd_label))
+        self.hash_sha1_btn.clicked.connect(
+                lambda: HashCracker.hashcracker(self.hash_textFile_LineEdit.text(),
+                                                'sha1',
+                                                self.hash_hashedPwd_lineEdit.text(),
+                                                self.hash_pwd_label))
+        self.hash_sha256_btn.clicked.connect(
+                lambda: HashCracker.hashcracker(self.hash_textFile_LineEdit.text(),
+                                                'sha256',
+                                                self.hash_hashedPwd_lineEdit.text(),
+                                                self.hash_pwd_label))
 
-    import socket
-    from IPy import IP
+        import WordList
+        self.wordList_alpha_btn.clicked.connect(
+                lambda: WordList.generateWordlist(
+                        int(self.wordList_min_spinBox.value()),
+                        int(self.wordList_max_spinBox.value()),
+                        1,
+                        self.wordList_path_lineEdit.text()
+                )
+        )
 
-    starting_port = int(input("Enter the port you want your scan to start with: "))
-    ending_port = int(input("Enter the port you want your scan to end with: "))
+        self.wordList_num_btn.clicked.connect(
+                lambda: WordList.generateWordlist(
+                        int(self.wordList_min_spinBox.value()),
+                        int(self.wordList_max_spinBox.value()),
+                        2,
+                        self.wordList_path_lineEdit.text()
+                )
+        )
+
+        self.wordList_alphanum_btn.clicked.connect(
+                lambda: WordList.generateWordlist(
+                        int(self.wordList_min_spinBox.value()),
+                        int(self.wordList_max_spinBox.value()),
+                        3,
+                        self.wordList_path_lineEdit.text()
+                )
+        )
+
+        import ssh_bruteforce
+        self.ssh_start_btn.clicked.connect(lambda: ssh_bruteforce.bruteforce(self.ssh_output_label,
+                                                                             self.ssh_username_lineEdite.text().lower(),
+                                                                             self.ssh_pwd_lineEdit.text().lower()))
+
+        import detect_os
+        self.os_start_btn.clicked.connect(lambda: detect_os.passive(self.os_ip_lineEdite.text(), self.os_output_label))
+
+        import sqli
+        self.sqli_start_btn.clicked.connect(lambda: sqli.test_sqli(f'{self.sqli_host_lineEdite.text()}{self.sqli_route_lineEdit.text()}', self.sqli_output_label))
+
 
     # Make able multiple scans to be done
 
@@ -1174,6 +1222,27 @@ class Ui_MainWindow(object):
                 ip=socket.gethostbyname(domain_name)
                 self.ipf_ip_label.setText(ip)
 
+
+    def portscanfunc(self,MainWindow):
+
+        import PortScanner
+
+
+        results = PortScanner.multiple_scan(self.port_domain_lineEdit.text(),self.port_starting_spinBox.value(),self.port_ending_spinBox.value())
+        self.port_openPorts_label.setText('\n'.join(results))
+        #for result in results:
+         #temp = self.port_openPorts_label.text()
+         #temp.append(result)
+         #self.port_openPorts_label.setText(temp)
+
+    def ddosfunc(self,MainWindow):
+        import DDOS
+        DDOS.ddos(self.ddos_ip_lineEdit.text(),int(self.ddos_port_lineEdit.text()))
+
+    def hashCrackerFunc(self, MainWindow):
+        import HashCracker
+        self.hash_md5_btn.clicked.connect(HashCracker.hashcracker(self.hash_textFile_LineEdit.text(), self.hash_hashedPwd_lineEdit.text(), 'md5'))
+        # result = HashCracker.hashcracker(self.hash_textFile_LineEdit.text(), self.hash_hashedPwd_lineEdit.text(), self.hash_s)
 
 
     def retranslateUi(self, MainWindow):
