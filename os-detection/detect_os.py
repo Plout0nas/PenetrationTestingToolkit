@@ -6,7 +6,7 @@ from scapy.sendrecv import sr1
 DST_IP = '192.168.1.19'
 
 
-def passive(dst, label):
+def passive(dst):
 	"""
 		+------------------+
 		|   OS TTL Values  |
@@ -22,25 +22,25 @@ def passive(dst, label):
 		|         |        |
 		+---------+--------+
 	"""
-
+	
 	ip_packet = IP(dst=dst)/ICMP()
 	packet_resp = sr1(ip_packet, timeout=4)
-
+	
 	if packet_resp is None:
 		print('[!] Request timeout')
-		label.setText('[!] Request timeout')
-		return
+		return 'timeout'
 	
 	resp_ttl = packet_resp.getlayer(IP).ttl
 	if resp_ttl <= 64:
-		txt = f'[+] Remote OS is Linux - TTL {resp_ttl}'
 		print(f'[+] Remote OS is Linux - TTL {resp_ttl}')
-		label.setText(txt)
+		return 'linux'
 	elif resp_ttl <= 128:
-		txt = f'[+] Remote OS is Windows - TTL {resp_ttl}'
 		print(f'[+] Remote OS is Windows - TTL {resp_ttl}')
-		label.setText(txt)
+		return 'windows'
 	else:
-		txt = f'[+] Remote OS is other or protected - TTL {resp_ttl}'
 		print(f'[+] Remote OS is other or protected - TTL {resp_ttl}')
-		label.setText(txt)
+		return 'other'
+	
+	
+if __name__ == '__main__':
+	passive(DST_IP)
