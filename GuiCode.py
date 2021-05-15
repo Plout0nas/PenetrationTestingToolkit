@@ -1154,7 +1154,7 @@ class Ui_MainWindow(object):
         # IP Finder button functionality
         self.ipf_scan_btn.clicked.connect(self.ipfunc)
         # Port Scanner button functionality
-        self.port_scan_btn.clicked.connect(self.portscanfunc)
+        #self.port_scan_btn.clicked.connect(self.portscanfunc)
         #
 
         import HashCracker
@@ -1215,7 +1215,6 @@ class Ui_MainWindow(object):
 
 
     # Make able multiple scans to be done
-
 
     def ipfunc(self,MainWindow):
                 domain_name=self.ipf_domain_lineEdit.text()

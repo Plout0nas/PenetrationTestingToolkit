@@ -72,8 +72,8 @@ def target_communication():
             download (file name)           --> Download file from machine
             keylog_start                        --> Start keylogger
             keylog_dump                         --> Print inputs of keylogger
-            keylog_stop                         --> Stop and destroy keylogger
-            persistence (reg name, file name)    --> Create persistence''')
+            keylog_stop                         --> Stop and destroy keylogger 
+            ''')
         else:
             result = reliable_recv()
             print(result)
